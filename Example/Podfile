@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'JWBasicUtilites_Example' do
+  pod 'JWBasicUtilites', :path => '../'
+
+  target 'JWBasicUtilites_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
