@@ -1,0 +1,49 @@
+{
+  "name": "JWBasicUtilites",
+  "version": "0.1.0",
+  "summary": "A short description of JWBasicUtilites.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liujunwei2018/JWBasicUtilites",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liujunwei2018": "liujunwei0422@icloud.com"
+  },
+  "source": {
+    "git": "git@github.com:liujunwei2018/JWBasicUtilites.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JWBasicUtilites/Classes/**/*",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "Device",
+      "source_files": "JWBasicUtilites/Classes/Device/**/*.{h,m}",
+      "public_header_files": "JWBasicUtilites/Classes/Device/**/*.h"
+    },
+    {
+      "name": "Macros",
+      "source_files": "JWBasicUtilites/Classes/Macros/**/*.{h,m}",
+      "public_header_files": "JWBasicUtilites/Classes/Macros/**/*.h"
+    },
+    {
+      "name": "Runtime",
+      "source_files": "JWBasicUtilites/Classes/Runtime/**/*.{h,m}",
+      "public_header_files": "JWBasicUtilites/Classes/Runtime/**/*.h"
+    },
+    {
+      "name": "UIApplication",
+      "source_files": "JWBasicUtilites/Classes/UIApplication/**/*.{h,m}",
+      "public_header_files": "JWBasicUtilites/Classes/UIApplication/**/*.h"
+    }
+  ]
+}

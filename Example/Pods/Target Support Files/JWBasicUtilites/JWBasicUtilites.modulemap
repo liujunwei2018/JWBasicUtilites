@@ -1,0 +1,6 @@
+framework module JWBasicUtilites {
+  umbrella header "JWBasicUtilites-umbrella.h"
+
+  export *
+  module * { export * }
+}

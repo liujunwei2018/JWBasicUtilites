@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - JWBasicUtilites (0.1.0):
+    - AFNetworking
+    - JWBasicUtilites/Device (= 0.1.0)
+    - JWBasicUtilites/Macros (= 0.1.0)
+    - JWBasicUtilites/Runtime (= 0.1.0)
+    - JWBasicUtilites/UIApplication (= 0.1.0)
+  - JWBasicUtilites/Device (0.1.0):
+    - AFNetworking
+  - JWBasicUtilites/Macros (0.1.0):
+    - AFNetworking
+  - JWBasicUtilites/Runtime (0.1.0):
+    - AFNetworking
+  - JWBasicUtilites/UIApplication (0.1.0):
+    - AFNetworking
+
+DEPENDENCIES:
+  - JWBasicUtilites (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+
+EXTERNAL SOURCES:
+  JWBasicUtilites:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  JWBasicUtilites: 9de790328f32ee1d5e83f73d14afec00b2267b0f
+
+PODFILE CHECKSUM: 65fe9d4d34c3ccc332afc44272a1576464f85a0d
+
+COCOAPODS: 1.8.4

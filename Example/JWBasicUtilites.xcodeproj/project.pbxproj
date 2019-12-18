@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		07FA6A640FA3A7F02EE632D2 /* Pods-JWBasicUtilites_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUtilites_Example.debug.xcconfig"; path = "Target Support Files/Pods-JWBasicUtilites_Example/Pods-JWBasicUtilites_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0DBF7FE9E5DAE518AC38BE6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0DBF7FE9E5DAE518AC38BE6D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		3CDF4443DD180E852BC41BD2 /* Pods_JWBasicUtilites_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWBasicUtilites_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* JWBasicUtilites_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JWBasicUtilites_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,10 +61,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		62E91999F3BD8BF075ED951F /* Pods-JWBasicUtilites_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUtilites_Tests.debug.xcconfig"; path = "Target Support Files/Pods-JWBasicUtilites_Tests/Pods-JWBasicUtilites_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		82FBB3D7EDF8C5ECA9BFACE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		82FBB3D7EDF8C5ECA9BFACE9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FFF7BDE02C19C65BA761D96 /* Pods_JWBasicUtilites_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JWBasicUtilites_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A306FDCE9B2A08FC43B4D214 /* JWBasicUtilites.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JWBasicUtilites.podspec; path = ../JWBasicUtilites.podspec; sourceTree = "<group>"; };
+		A306FDCE9B2A08FC43B4D214 /* JWBasicUtilites.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JWBasicUtilites.podspec; path = ../JWBasicUtilites.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6EF9349A2E70F09FF8514A7 /* Pods-JWBasicUtilites_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUtilites_Example.release.xcconfig"; path = "Target Support Files/Pods-JWBasicUtilites_Example/Pods-JWBasicUtilites_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EDE69ED6029D6E6A519E0F43 /* Pods-JWBasicUtilites_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JWBasicUtilites_Tests.release.xcconfig"; path = "Target Support Files/Pods-JWBasicUtilites_Tests/Pods-JWBasicUtilites_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				62E91999F3BD8BF075ED951F /* Pods-JWBasicUtilites_Tests.debug.xcconfig */,
 				EDE69ED6029D6E6A519E0F43 /* Pods-JWBasicUtilites_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JWBasicUtilites_Example/Pods-JWBasicUtilites_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/JWBasicUtilites/JWBasicUtilites.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWBasicUtilites.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
